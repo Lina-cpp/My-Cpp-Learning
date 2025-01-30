@@ -32,3 +32,11 @@
 *.app
 *.xml
 *.name
+*.filters
+*.vcxproj
+*.sln
+*.tlog
+*.pdb
+*.ilk
+*.recipe
+*.idb
