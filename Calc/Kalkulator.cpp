@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cctype>
 
     float add(float a, float b)
     {
@@ -43,12 +44,34 @@ int main()
         std::cout<<"Enter your choice : ";
             std::cin>>choice;
 
-        if (choice < 1 || choice > 5)
+        //check if choice is a number, if not clear and restart
+        if (!std::cin>>choice)
         {
+            system("cls");
+            std::cout<<"That is not a valid choice\n";
+            std::cin.clear();
+            std::cin.ignore(1000, '\n');
+        }
+
+
+        //if want to leave
+        else if (choice == 5)
+        {
+            std::cout<<"Exiting \n";
+            return 0;
+        }
+        
+        
+        //check if choice is in range, if not restart
+        else if (choice < 1 || choice > 4)
+        {
+            system("cls");
             std::cout<<"Wrong choice \n";
             continue;
             
         }
+
+        else break; //leave loop
         
     }
 
@@ -83,10 +106,7 @@ int main()
             result = divide(a,b);
             WriteResult(result);
             break;
-
-        case 5:
-            std::cout<<"Exit \n";
-            break;
+            
         }
         
     
