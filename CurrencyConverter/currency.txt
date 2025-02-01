@@ -1,0 +1,10 @@
+USD to EUR	= 0,96
+EUR to USD	= 1,04
+
+USD to PLN	= 4,04
+PLN to USD	= 0,25
+
+EUR to PLN  = 4.20
+PLN to EUR	= 0,24
+
+
